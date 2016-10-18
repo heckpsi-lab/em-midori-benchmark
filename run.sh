@@ -16,14 +16,6 @@ killall ruby
 
 echo "======================================="
 
-nohup jruby -X+O -Xcompile.invokedynamic=true route.rb 2>&1 &
-echo "Reports for em-midori(JRuby)"
-sleep 20
-wrk http://127.0.0.1:4564 -c 1000 -t12 -d 10
-killall java
-
-echo "======================================="
-
 cd ../rails/hello
 nohup rails s -p 4565 >/dev/null 2>&1 &
 echo "Reports for Rails"
