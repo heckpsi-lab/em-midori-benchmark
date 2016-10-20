@@ -1,4 +1,13 @@
-cd express
+cd node
+nohup node index.js > /dev/null 2>&1 &
+echo "Reports for node.js"
+sleep 1
+wrk http://127.0.0.1:4562 -c 1000 -t12 -d 10
+killall node
+
+echo "======================================="
+
+cd ../express
 nohup node index.js > /dev/null 2>&1 &
 echo "Reports for express.js"
 sleep 1
