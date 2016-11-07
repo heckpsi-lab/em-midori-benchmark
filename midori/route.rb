@@ -7,4 +7,6 @@ class API < Midori::API
   end
 end
 
-Midori.run(API, '127.0.0.1', 4564)
+Midori::Configure.set :bind, '127.0.0.1'
+Midori::Configure.set :port, 4564
+Midori::Runner.new(API).start

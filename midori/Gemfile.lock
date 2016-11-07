@@ -1,0 +1,21 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    em-midori (0.1.1)
+      eventmachine (~> 1.2)
+      http_parser.rb (~> 0.6)
+      mustermann (~> 0.4)
+    eventmachine (1.2.0.1)
+    http_parser.rb (0.6.0)
+    mustermann (0.4.0)
+      tool (~> 0.2)
+    tool (0.2.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  em-midori
+
+BUNDLED WITH
+   1.13.6
