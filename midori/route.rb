@@ -1,9 +1,9 @@
-require 'em-midori'
+require 'midori'
 require 'json'
 
 class API < Midori::API
   get '/' do
-    {msg: 'Hello World'}.to_json
+    { msg: 'Hello World' }.to_json
   end
 end
 
